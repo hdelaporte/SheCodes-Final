@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:image" content="CODE/SheCodes/image/fond.jpg">
+    <title>Les Podcasts d'Hélène</title>
+
+    <style>
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        background-color: white;
+        color: #be7575;
+            }
+    
+    img {
+        display:block;
+        margin:0 auto;
+        border-radius: 5px;
+        background-size: cover;
+        max-width: 100%;
+        max-height: 100%;
+    }        
+
+    h1 {
+        font-size: 42px;
+    }
+    
+    h2{
+        font-size: 30px;
+        font-weight:lighter;
+    }
+
+    p{
+        color:#3c4245;
+        font-size: 20px;
+        font-style: italic;
+        text-align: center; 
+        /* What properties should I use to center the "block" (<p> text) on the page    ? */
+        line-height: 2;
+        padding: 2%;
+        width: 40%;
+        height: 25%;
+    }
+    
+    span.keyword {
+        font-weight: bold;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    button{
+        background: #B8DCD8;
+        color: white;
+        font-weight: bold;
+        padding: 12px;
+        margin: 10;
+        border-radius:50px;
+        transition: all 200ms ease-in-out;
+    }
+    
+    button:hover {
+        background: white;
+        color: #B8DCD8;
+    }
+
+    footer {
+        background-color:#F2EEE5;
+        background-size: cover;
+        padding: 20px;
+        margin:0;
+        border:0;
+        font-size: 15px;
+        font-style: italic;
+    }
+
+    </style>
+</head>
+
+
+<body>
+<section>
+
+<img src="https://ibin.co/51uswuuo95XS.jpg" alt="casque rose" width="cover"/>
+
+<hr />
+
+<h1>
+    La planète Podcast 🎙
+</h1>
+<h2>
+    <em> Suivez le guide, je vous montre le chemin </em>
+</h2>
+<br />
+
+<button>
+    👁‍🗨 Par ici !
+</button>
+<br />
+
+
+<h3>
+        De l'amour du son vers un nouveau <strong> média </strong>
+</h3>
+<br />
+
+<div class="intro">
+    <p>
+        Bienvenue dans mon <span class="keyword"> univers </span>, l'idée de ce blog est de vous <span class="keyword">
+            guider </span> dans le monde du <span class="keyword"> podcast natif </span>.
+        <br />
+        Une <span class="keyword">sélection </span> de mes épisodes préférés classée par <span class="keyword"> thématique.
+    </p>
+
+    <div style="width:70%;height:0;padding-bottom:15%;"><iframe
+            src="https://giphy.com/embed/3oKGzxrBUEji6HEK6A" width="30%" height="30%" style="position:absolute"
+            frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+</div>
+<br />
+<footer>
+    A très bientôt !
+</footer>
+
+</section>      
+
+<script>
+
+function welcome () {
+    let name = prompt ("Quel est ton nom?");
+    let ask = prompt ("As-tu déjá écouté un podcast?");
+
+    if (ask==="oui") {
+        let h1 = document.querySelector ("h1");
+        h1.innerHTML = "Salut " + name + ", bienvenue 💬";
+        let h2 = document.querySelector ("h2");
+        h2.innerHTML = "Dis-moi, quel est ton podcast coup de ❤ ?";
+        let h3 = document.querySelector("h3");
+        h3.innerHTML = "";
+        let p = document.querySelector("p");
+        p.innerHTML = "";
+        let button = document.querySelector ("button");
+        button.innerHTML = "";
+        /* How can I take off the button fully ? */
+    } 
+    else {
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = "Salut " + name + ", bienvenue 🎊";
+        let h2 = document.querySelector("h2");
+        h2.innerHTML = "Je te prépare une petite sélection des meilleurs podcasts du moment 🤡";
+        let h3 = document.querySelector("h3");
+        h3.innerHTML = "";
+        let p = document.querySelector("p");
+        p.innerHTML = "";
+        let button = document.querySelector("button");
+        button.innerHTML = "";
+         /* How can I take off the button fully ? */
+    }
+  
+}
+    let applyButton = document.querySelector("button");
+    applyButton.addEventListener ("click",welcome);
+
+alert("Olá ! ☺");    
+
+</script>
+
+
+</body>
+</html>
